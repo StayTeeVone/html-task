@@ -1,24 +1,32 @@
-<html class="translated-ltr">
-
+<!DOCTYPE html class="translated-ltr">
 <head>
+
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="referrer" content="always">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="robots" content="noindex, follow">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>O prémio maravilhosa</title>
   <meta name="theme-color" content="#00529a">
-  <script src="jquery.min.js"></script>
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script defer="" src="bootstrap.min.js"></script>
-  <link rel="stylesheet" type="text/css" href="style.min.css">
-  <script type="text/javascript">var portal = 'it';
+
+  <title>O prémio maravilhosa</title>
+
+  <link rel="stylesheet" type="text/css" href="assets/css/sur.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
+  <link rel="stylesheet" href="assets/css/comments.style.css"
+
+
+
+  <script defer="" src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script type="text/javascript">
+    var portal = 'it';
     var theme = '3-Samsung_S10';
     var template = 'surbox';
     var brand_country = 'Spain';
     var dayNames = Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sábado");
     var monthNames = new Array("Janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro");
-    var img_regalo = "img-2.png";
+    var img_regalo = "assets/imgs/img-2.png";
     var minutos_y = "minutos e ";
     var segundos = "segundos ";
     var url_f = "";
@@ -26,44 +34,34 @@
       backdrop: 'static',
       keyboard: false
     };
-    var adS = ["bG9jYWwucHJlbG9hZGVycy5jb20=", "bG9jYWwucHJlbG9hZGVycy5jb20="];</script>
-  <script defer="" src="p.min.js"></script>
-  <style type="text/css">
-    .content {
-      background: #f2f2f2;
-    }
-    body.with_background {
-      background: url("img-1.png");
-    }
-    @media (max-width: 800px) {
-      body.with_background {
-        background: url("img-1.png");
-      }
-    }
-    .text-primary {
-      color: #bc42a4;
-    }
-  </style>
-  <link rel="stylesheet" type="text/css" href="sur.min.css">
+    var adS = ["bG9jYWwucHJlbG9hZGVycy5jb20=", "bG9jYWwucHJlbG9hZGVycy5jb20="];
+  </script>
+  <script defer="" src="assets/js/p.min.js"></script>
+
   <!--Facebook Pixel Code-->
-   <script>
-    !function (f, b, e, v, n, t, s) {
-      if (f.fbq) return;
-      n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) };
-      if (!f._fbq) f._fbq = n;
-      n.push = n;
-      n.loaded = !0;
-      n.version = '2.0';
-      n.queue = [];
-      t = b.createElement(e);
-      t.async = !0;
-      t.src = v;
-      s = b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t, s)
-    }
-      (window, document, 'script', '//connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '{lander.param:fbpixel}');
-    fbq('track', "PageView");
+  <script>
+   function listName(){
+    let firstState_input = document.getElementById('first-state').value;
+    let secondState_input = document.getElementById('second-state').value;
+    let age18_29 = document.getElementById('age18-29').value;
+    let age30_39 = document.getElementById('age30-39').value;
+    let age40_49 = document.getElementById('age40-49').value;
+    let age50 = document.getElementById('age50').value;
+    let count_1 = document.getElementById('count-1').value;
+    let count_2 = document.getElementById('count-2').value;
+    let count_3 = document.getElementById('count-3').value;
+    let yes = document.getElementById('yes').value;
+    let no = document.getElementById('no').value;
+
+    let txtState = 'State (Masculino: ' + firstState_input + '. Femenino: ' + secondState_input + ')';
+    let txtAge = 'Age (18-29: ' + age18_29 + '. 30-39: ' + age30_39 + '. 40-49: ' + age40_49 + '. 50+: ' + age50 + ')';
+    let txtCount = 'CountPeople (1: ' + count_1 + '. 2: ' + count_2 + '. 3+: ' + count_3 + ')';
+    let txtIPHONE = 'Do you have iPhone? (Yes: ' + yes + '. No: ' + no + ')';
+
+    let arr_answer = [txtState, txtAge, txtCount, txtIPHONE];
+
+    console.log(arr_answer);
+   }  
   </script>
   <noscript>
     <img height="1" width="1" style="display:none"
@@ -86,8 +84,8 @@
   </div>
   <div id="p_body_content">
     <div class="top-header" style="background: #232f3e; padding: 12px 10px;">
-      <img src="menu-top.png" alt="" style="margin-top: 3px;">
-      <img src="cart.png" alt="" style="float: right;"></div>
+      <img src="assets/imgs/menu-top.png" alt="" style="margin-top: 3px;">
+      <img src="assets/imgs/cart.png" alt="" style="float: right;"></div>
     <div style="display: flex; padding: 10px; background: #37475A;">
       <div class="header_flex_item">
         <font style="vertical-align: inherit;">
@@ -138,7 +136,7 @@
               }
             </style>
             <div class="principal_bg">
-              <img class="img-principal principal_efect" src="princ.png"
+              <img class="img-principal principal_efect" src="assets/imgs/princ.png"
                 style="max-width: 300px;margin: 0px auto;display: block;width: 100%;cursor:pointer;">
             </div>
           </div>
@@ -192,17 +190,24 @@
                   </font>
                 </span>
               </p>
+              <form>
               <div class="survey_button bq1" data-bq="1">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Masculino</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="state" value="Masculino" id="first-state">
+                    <label for="first-state">Masculino</label>
+                  </font>
                 </font>
               </div>
               <div class="survey_button bq1" data-bq="2">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Femenino</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="state" value="Femenino" id="second-state">
+                    <label for="second-state">Femenino</label>
+                  </font>
                 </font>
               </div>
-
+            </form>
             </div>
             <div id="q2">
               <p class="question">
@@ -217,26 +222,40 @@
                   </font>
                 </span>
               </p>
+              <form>
               <div class="survey_button bq2" data-bq="1">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">18-29</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="age" value="18-29" id="age18-29">
+                    <label for="age18-29">18-29</label>
+                  </font>
                 </font>
               </div>
               <div class="survey_button bq2" data-bq="2">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">30-39</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="age" value="30-39" id="age30-39">
+                    <label for="age30-39">30-39</label>
+                  </font>
                 </font>
               </div>
               <div class="survey_button bq2" data-bq="3">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">40-49</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="age" value="40-49" id="age40-49">
+                    <label for="age40-49">40-49</label>
+                  </font>
                 </font>
               </div>
               <div class="survey_button bq2" data-bq="4">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">50+</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="age" value="50+" id="age50">
+                    <label for="age50">50+</label>
+                  </font>
                 </font>
               </div>
+            </form>
             </div>
             <div id="q3">
               <p class="question">
@@ -251,28 +270,35 @@
                   </font>
                 </span>
               </p>
-
+              <form>
               <div class="survey_button bq3" data-bq="1">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">1</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="count" value="1" id="count-1">
+                    <label for="count-1">1</label>
+                  </font>
                 </font>
               </div>
               <div class="survey_button bq3" data-bq="2">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">2</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="count" value="2" id="count-2">
+                    <label for="count-2">2</label>
+                  </font>
                 </font>
               </div>
               <div class="survey_button bq3" data-bq="3">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">3+</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="count" value="3+" id="count-3">
+                    <label for="count-3">3+</label>
+                  </font>
                 </font>
               </div>
+            </form>
             </div>
             <div id="q4">
               <p class="question">
-
-
-
                 <strong>
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Questão 4/4:</font>
@@ -284,19 +310,27 @@
                   </font>
                 </span>
               </p>
+              <form>
               <div class="survey_button bq4" data-bq="1">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Sim</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="iPhone" value="Sim" id="yes">
+                    <label for="yes">Sim</label>
+                  </font>
                 </font>
               </div>
               <div class="survey_button bq4" data-bq="2">
                 <font style="vertical-align: inherit;">
-                  <font style="vertical-align: inherit;">Não</font>
+                  <font style="vertical-align: inherit;">
+                    <input type="radio" name="iPhone" value="Não" id="no">
+                    <label for="no">Não</label>
+                  </font>
                 </font>
               </div>
+            </form>
             </div>
           </div>
-          <link rel="stylesheet" type="text/css" href="survey.min.css">
+          <link rel="stylesheet" type="text/css" href="assets/css/survey.min.css">
           <style type="text/css">
             .survey_button {
               background-color: #ed9220;
@@ -335,142 +369,146 @@
           </p>
         </div>
         <div class="main-content" id="content3">
-          <script type="text/javascript">var box_ini = false;</script>
-          <link rel="stylesheet" type="text/css" href="box.min.css">
+
+          <script type="text/javascript">
+            var box_ini = false;
+          </script>
+
+          <link rel="stylesheet" type="text/css" href="assets/css/box.min.css">
           <style type="text/css">
             .boxes {
-              background-image: url(assets/img-1.png);
+              background-image: url(assets/imgs/img-1.png);
             }
           </style>
           <div id="boxes" class="boxes">
             <div class="div_img_gift">
-              <img class="img_gift box-gift" src="img-2.png"></div>
+              <img class="img_gift box-gift" src="assets/imgs/img-2.png"></div>
             <div id="0" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="1" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="2" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="3" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="4" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="5" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="6" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="7" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="8" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="9" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="10" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
             <div id="11" class="try temblor">
               <div class="caja_tapa">
-                <img class="box-01" src="box-top.png"></div>
+                <img class="box-01" src="assets/imgs/box-top.png"></div>
               <div class="caja_trasera">
-                <img class="box-03" src="box-ins.png"></div>
+                <img class="box-03" src="assets/imgs/box-ins.png"></div>
               <div class="caja_gift">
-                <img class="box-04" src="phone-box.png"></div>
+                <img class="box-04" src="assets/imgs/phone-box.png"></div>
               <div class="caja">
-                <img class="box-02" src="box-bottom.png"></div>
+                <img class="box-02" src="assets/imgs/box-bottom.png"></div>
             </div>
           </div>
           <div id="p_modal1" class="modal fade text-center p_modal" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog" role="document">
               <div class="modal-content">
                 <div class="modal-body">
-                  <img class="temblor_inf box-00" src="box-full.png">
+                  <img class="temblor_inf box-00" src="assets/imgs/box-full.png">
                   <h2>Parabéns, jé certificamos as sua respostadas</h2>
                   <p>
                     <font style="vertical-align: inherit;">
@@ -510,7 +548,7 @@
                 <div class="modal-body">
 
 
-                  <img class="box-gift" src="img-2.png">
+                  <img class="box-gift" src="assets/imgs/img-2.png">
                   <h2>O senhor conseguiu!</h2>
                   <p> ***As regras***</p>
                   <p>Parabéns! O senhor ganhou um iPhone 11 Pro！</p>
@@ -520,16 +558,15 @@
                       style="color: red;font-weight: bold">€1.00</span> você poderá comprar um novo iPhone 11 Pro,
                     incluindo frete.</p>
                   <p>3. Seu iPhone11 Pro será enviado dentro de 5 a 7 dias.</p>
-                  <a href="http://{trackingdomain}/click/?origin={origin}&fbpixel={lander.param:fbpixel}"
-                    onclick="fbq('track', 'InitiateCheckout');" id="p_modal_button3" class="btn btn-success btn-lg"
-                    style="background-color:#ed9220; border-color:#ed9220">OK</a>
+                  <button onclick="listName()" id="p_modal_button3" class="btn btn-success btn-lg"
+                    style="background-color:#ed9220; border-color:#ed9220">OK</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="main-content">
-          <link rel="stylesheet" type="text/css" href="comments.min.css">
+          <link rel="stylesheet" type="text/css" href="assets/css/comments.min.css">
           <div class="comments_face">
             <div class="comments">
               <p style="margin:0;padding:0;float:left;display:block;width:50%">
@@ -546,7 +583,8 @@
             </div>
             <div class="comments" id="comment0" style="display:block">
               <div class="profile">
-                <img src="1.gif"></div>
+                <img src="assets/imgs/1.gif">
+              </div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -565,7 +603,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="3.jpg" width="15px" height="15px">
+                  <img src="assets/imgs/3.jpg" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">29</font>
                   </font>
@@ -574,8 +612,6 @@
                   <small>
                     <font style="vertical-align: inherit;">·</font>
                   </small>
-
-
                   <small>
                     <u>
                       <font style="vertical-align: inherit;">4 minutos antes</font>
@@ -589,10 +625,18 @@
                   </u>
                 </small>
               </div>
+              <div class="container">
+                <textarea type="text" id="comment-box" placeholder="Введите комментарий..."></textarea>
+                <br><button id="post">Опубликовать</button>
+                  <ul id="unordered">
+       
+                  </ul>
+                <script src="assets/js/custom.js"></script>
+              </div>
             </div>
             <div class="comments" id="comment1" style="display:block">
               <div class="profile">
-                <img src="4.jpg"></div>
+                <img src="assets/imgs/3.jpg"></div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -611,7 +655,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="assets/imgs/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">9</font>
                   </font>
@@ -630,7 +674,7 @@
             </div>
             <div class="comments" id="comment1" style="display:block">
               <div class="profile">
-                <img src="5.jpg"></div>
+                <img src="assets/imgs/5.jpg"></div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -649,7 +693,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="assets/imgs/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">22</font>
                   </font>
@@ -668,7 +712,7 @@
             </div>
             <div class="comments" id="comment2" style="display:block">
               <div class="profile">
-                <img src="6.jpg"></div>
+                <img src="assets/imgs/6.jpg"></div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -688,7 +732,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="assets/imgs/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">36</font>
                   </font>
@@ -707,7 +751,7 @@
             </div>
             <div class="comments" id="comment3" style="display:block">
               <div class="profile">
-                <img src="2.gif"></div>
+                <img src="assets/imgs/2.gif"></div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -728,7 +772,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="assets/imgs/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">31</font>
                   </font>
@@ -753,7 +797,7 @@
             </div>
             <div class="comments" id="comment4" style="display:block">
               <div class="profile">
-                <img src="7.jpg"></div>
+                <img src="assets/imgs/7.jpg"></div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -773,7 +817,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="assets/imgs/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">6</font>
                   </font>
@@ -792,7 +836,7 @@
             </div>
             <div class="comments" id="comment5" style="display:block">
               <div class="profile">
-                <img src="8.jpg"></div>
+                <img src="assets/imgs/8.jpg"></div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -812,7 +856,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="assets/imgs/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">15</font>
                   </font>
@@ -835,7 +879,7 @@
             </div>
             <div class="comments" id="comment5" style="display:block">
               <div class="profile">
-                <img src="4.jpg"></div>
+                <img src="assets/imgs/4.jpg"></div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -854,7 +898,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="assets/imgs/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">39</font>
                   </font>
@@ -871,7 +915,7 @@
             </div>
             <div class="comments" id="comment6" style="display:block">
               <div class="profile">
-                <img src="10.jpg"></div>
+                <img src="assets/imgs/10.jpg"></div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -891,7 +935,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="assets/imgs/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">23</font>
                   </font>
@@ -913,7 +957,7 @@
             </div>
             <div class="comments" id="comment7" style="display:block">
               <div class="profile">
-                <img src="9.jpg"></div>
+                <img src="assets/imgs/9.jpg"></div>
               <div class="comment-content">
                 <p class="name">
                   <font style="vertical-align: inherit;">
@@ -936,7 +980,7 @@
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">Curte·comente</font>
                   </font>
-                  <img src="like.png" width="15px" height="15px">
+                  <img src="assets/imgs/like.png" width="15px" height="15px">
                   <font style="vertical-align: inherit;">
                     <font style="vertical-align: inherit;">30</font>
                   </font>
@@ -957,12 +1001,9 @@
     </font>
   </div>
   <div id="goog-gt-tt" class="skiptranslate" dir="ltr">
-
-    <div class="status-message" style="display: none;"></div>
+    <div class="status-message" style="display: none;">
+    
+    </div>
   </div>
-
-
-
 </body>
-
 </html>
